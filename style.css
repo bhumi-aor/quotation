@@ -703,6 +703,10 @@ video {
 .text-white{
   color: #fff;
 }
+/*Add for Thai font */
+.thai-font {
+  font-family: 'Sarabun', sans-serif;
+}
 
 @page {
   margin: 0;
