@@ -705,7 +705,7 @@ video {
 }
 /*Add for Thai font */
 .thai-font {
-  font-family: 'Sarabun', sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
 }
 
 @page {
