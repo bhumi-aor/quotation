@@ -714,7 +714,9 @@ video {
 .w-max{
   width: max-content;
 }
-
+.min-w-300{
+  min-width: 300px;
+}
 @page {
   margin: 0;
 }
