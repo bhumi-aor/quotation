@@ -717,7 +717,7 @@ video {
   width: max-content;
 }
 .min-w-300{
-  min-width: 300px;
+  min-width: 320px;
 }
 .w-half{
   width: 50%;
