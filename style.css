@@ -703,7 +703,9 @@ video {
 .text-white{
   color: #fff;
 }
+
 /*Add for Thai font */
+
 .thai-font{
   font-family: 'Noto Sans Thai', sans-serif;
 }
@@ -717,6 +719,20 @@ video {
 .min-w-300{
   min-width: 300px;
 }
+.w-half{
+  width: 50%;
+}
+.w-max{
+   width: max-content;
+}
+.ml-auto{
+   margin-left: auto;
+}
+.flex-between{
+   display: flex;
+   justify-content: space-between;
+}
+/*-------------*/
 @page {
   margin: 0;
 }
