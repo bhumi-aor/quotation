@@ -644,6 +644,10 @@ video {
   padding-bottom: 0.5rem; /*เพิ่มเติม*/
 }
 
+.pl-1{
+  padding-left: 0.25rem; /* 4px *//*เพิ่มเติม*/
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
