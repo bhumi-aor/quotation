@@ -546,7 +546,7 @@ video {
   height: 3rem;
 }
 
-.w-1/2{
+.w-1\/2{
   width: 50%;
 }
 
@@ -731,6 +731,20 @@ video {
 .flex-between{
    display: flex;
    justify-content: space-between;
+}
+.table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.th, td {
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
+  text-align: left;
+}
+.th {
+  font-weight: bold;
 }
 /*-------------*/
 @page {
