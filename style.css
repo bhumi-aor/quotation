@@ -759,6 +759,20 @@ video {
    display: flex;
    justify-content: space-between;
 }
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* gap-2 เท่ากับ 0.5rem หรือ 8px */
+}
+.logo-img {
+  position: absolute;
+  right: 1rem; /* right-4 = 1rem = 16px */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px; /* h-6 = 1.5rem = 24px */
+}
+/*------------------------------------*/
 /*.table {
   width: 100%;
   font-size: 12px;
