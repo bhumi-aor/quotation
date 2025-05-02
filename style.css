@@ -754,7 +754,7 @@ video {
    display: flex;
    justify-content: space-between;
 }
-.table {
+/*.table {
   width: 100%;
   font-size: 12px;
   border-collapse: collapse;
@@ -770,7 +770,7 @@ video {
 }
 .table-fixed{
   table-layout: fixed;
-}
+}*/
 /*-------------*/
 @page {
   margin: 0;
