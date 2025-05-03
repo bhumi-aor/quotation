@@ -833,4 +833,10 @@ video {
   body {
     -webkit-print-color-adjust: exact; /*Original*/
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+
 }
