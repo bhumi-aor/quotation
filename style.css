@@ -805,6 +805,10 @@ video {
 .table-fixed{
   table-layout: fixed;
 }*/
+/* @media print {
+  body {
+    margin-top: 120px; /* เว้นที่สำหรับ header */
+  }*/
 
   .print-header {
     display: block;
@@ -828,6 +832,5 @@ video {
 @media print {
   body {
     -webkit-print-color-adjust: exact; /*Original*/
-     margin-top: 120px; /* เว้นที่สำหรับ header */
   }
 }
