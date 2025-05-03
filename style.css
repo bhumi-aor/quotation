@@ -784,6 +784,9 @@ video {
 .body {
   padding-bottom: 80px; /* หรือเท่ากับความสูงของ footer */
 }
+.wrapper {
+  overflow: auto;
+}
 /*------------------------------------*/
 /*.table {
   width: 100%;
