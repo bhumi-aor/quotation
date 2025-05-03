@@ -833,15 +833,15 @@ video {
   body {
     -webkit-print-color-adjust: exact; /*Original*/
   }
-
-  footer {
+}
+ /* footer {
     position: fixed;
     bottom: 0;
-  }
+  }*/
 
-.body {
+/*.body {
     position: absolute;
-}
+}*/
 /*==========================*/
 /*@page {
    break-before: auto;
