@@ -759,18 +759,27 @@ video {
    display: flex;
    justify-content: space-between;
 }
-.footer-content {
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f5f9; /* เทียบเท่า bg-slate-100 */
+  color: #475569; /* text-neutral-600 */
+  text-align: center;
+  font-size: 12px;
+  padding: 16px 0; /* py-4 */
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 8px; /* gap-2 เท่ากับ 0.5rem หรือ 8px */
+  align-items: center;
+  position: fixed;
+}
+.footer-content {
+  flex: 1;
 }
 .logo-img {
-  position: absolute;
-  right: 1rem; /* right-4 = 1rem = 16px */
-  top: 50%;
-  transform: translateY(-50%);
-  height: 24px; /* h-6 = 1.5rem = 24px */
+  height: 100%;
+  object-fit: contain;
 }
 /*------------------------------------*/
 /*.table {
