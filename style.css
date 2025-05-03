@@ -781,6 +781,9 @@ video {
   height: 100%;
   object-fit: contain;
 }
+.body {
+  padding-bottom: 80px; /* หรือเท่ากับความสูงของ footer */
+}
 /*------------------------------------*/
 /*.table {
   width: 100%;
