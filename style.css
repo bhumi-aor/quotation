@@ -841,6 +841,14 @@ video {
         background-color: white;
         z-index: 1000;
       }
+      /* Table headers that will appear on every page */
+     .thead {
+    display: table-header-group;
+     }
+     /* Table footers that will appear on every page */
+     .tfoot {
+    display: table-footer-group;
+     }
 
       /* Add top margin to main content to prevent overlap with fixed header */
       .main-content {
