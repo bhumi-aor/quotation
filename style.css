@@ -774,13 +774,15 @@ video {
   align-items: center;
   position: fixed;
 }
+/*
 .footer-content {
   flex: 1;
-}
+}*/
+/*
 .logo-img {
   height: 100%;
   object-fit: contain;
-}
+}*/
 .body {
   padding-bottom: 80px; /* หรือเท่ากับความสูงของ footer */
 }
@@ -828,12 +830,60 @@ video {
 @page {
   margin: 0;
 }
-
+/*------04052025-----------*/
 @media print {
+      /* Header that will appear on every page */
+      .page-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+      }
+
+      /* Add top margin to main content to prevent overlap with fixed header */
+      .main-content {
+        margin-top: 170px; /* Adjust based on header height */
+      }
+      
+      /* Hide elements that shouldn't be printed on every page */
+      .no-repeat {
+        display: none;
+      }
+      
+      /* Footer on every page */
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+/*----------------------*/
+/* Existing styles can be kept */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 12px 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e5e7eb;
+    }
+    
+    .footer-content {
+      color: #64748b;
+      font-size: 14px;
+    }
+    
+    .logo-img {
+      height: 24px;
+    }
+/*----------------------*/
+/* @media print {
   body {
     -webkit-print-color-adjust: exact; /*Original*/
   }
-}
+}*/
  /* footer {
     position: fixed;
     bottom: 0;
