@@ -811,8 +811,8 @@ video {
   body {
     margin-top: 120px; /* เว้นที่สำหรับ header */
   }*/
-
-  .print-header {
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*.print-header {
     display: block;
     position: fixed;
     top: 0;
@@ -825,51 +825,77 @@ video {
   .no-print {
     display: none;
   }
-}
+}*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*-------------*/
 @page {
   margin: 0;
 }
-/*------04052025-----------*/
+/*====== 05042025 =========*/
 @media print {
+  table {
+    page-break-inside: auto;
+  }
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tfoot {
+    display: table-footer-group;
+  }
+
+  .page-header, .no-repeat {
+    display: none !important;
+  }
+
+  .main-content {
+    margin: 0; /* ยกเลิกการใช้ margin-top ที่ไม่จำเป็น */
+  }
+}
+/*========================*/
+/*------04052025-----------*/
+/*@media print {*/
       /* Header that will appear on every page */
       .page-header {
-        position: fixed;
+      /*  position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         background-color: white;
         z-index: 1000;
-      }
+      }*/
       /* Table headers that will appear on every page */
    /*  .thead {
     display: table-header-group;
-     }
+     }*/
      /* Table footers that will appear on every page */
  /*    .tfoot {
     display: table-footer-group;
      }*/
 
       /* Add top margin to main content to prevent overlap with fixed header */
-      .main-content {
-        margin-top: 170px; /* Adjust based on header height */
-      }
+      /*.main-content {
+        margin-top: 170px;*/ /* Adjust based on header height */
+     /* }*/
       
       /* Hide elements that shouldn't be printed on every page */
-      .no-repeat {
+     /* .no-repeat {
         display: none;
-      }
+      }*/
       
       /* Footer on every page */
-      .footer {
+     /* .footer {
         position: fixed;
         bottom: 0;
         width: 100%;
       }
-    }
+    }*/
 /*----------------------*/
 /* Existing styles can be kept */
-    .footer {
+   /* .footer {
       background-color: #f8f9fa;
       padding: 12px 56px;
       display: flex;
@@ -885,7 +911,7 @@ video {
     
     .logo-img {
       height: 24px;
-    }
+    }*/
 /*----------------------*/
 /* @media print {
   body {
@@ -908,7 +934,7 @@ video {
    height: 1103px;
    position: relative;
 }*/
-@page-break {
+/*@page-break {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -916,5 +942,5 @@ video {
     padding: 20px;
     background-color: red;
     text-align: center;
-}
+}*/
 
