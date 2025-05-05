@@ -811,8 +811,8 @@ video {
 }*/
 /* @media print {
   body {
-    margin-top: 120px; /* เว้นที่สำหรับ header */
-  }*/
+    margin-top: 120px;*/ /* เว้นที่สำหรับ header */
+ /* }*/
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   /*.print-header {
     display: block;
