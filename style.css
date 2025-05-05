@@ -938,8 +938,8 @@ video {
 /*----------------------*/
 /* @media print {
   body {
-    -webkit-print-color-adjust: exact; /*Original*/
-  }
+    -webkit-print-color-adjust: exact; *//*Original*/
+ /* }
 }*/
  /* footer {
     position: fixed;
