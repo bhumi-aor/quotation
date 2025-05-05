@@ -832,35 +832,56 @@ video {
   margin: 0;
 }
 /*====== 05042025 =========*/
-@media print {
-  table {
-    page-break-inside: auto;
-  }
-  tr {
-    page-break-inside: avoid;
-    page-break-after: auto;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tfoot {
-    display: table-footer-group;
-  }
+    @media print {
+      body {
+        margin: 0;
+      }
 
-  .page-header, .no-repeat {
-    display: none !important;
-  }
+      /* ป้องกันหัวทับเนื้อหา */
+      .main-content {
+        margin-top: 300px; /* ปรับให้เหมาะกับความสูง header */
+      }
 
-  .main-content {
-    margin: 0; /* ยกเลิกการใช้ margin-top ที่ไม่จำเป็น */
-  }
-}
+      /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
+      thead.print-header {
+        display: table-header-group;
+      }
+
+      .no-print {
+        display: none;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    /* สไตล์อื่น ๆ */
+    .footer {
+      background-color: #f8f9fa;
+      padding: 12px 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .footer-content {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .logo-img {
+      height: 24px;
+    }
 /*========================*/
 /*------04052025-----------*/
 /*@media print {*/
       /* Header that will appear on every page */
-      .page-header {
-      /*  position: fixed;
+      /* .page-header {
+       position: fixed;
         top: 0;
         left: 0;
         width: 100%;
