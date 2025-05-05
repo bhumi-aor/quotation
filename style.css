@@ -868,7 +868,7 @@ video {
         left: 0;
         width: 100%;
         background-color: white;
-        z-index: 100;
+        z-index: 1000;/*z-index: 100;*/
       }
       
       /* Table headers */
@@ -897,6 +897,11 @@ video {
       /* margin-bottom: 60px;   Adjust based on your footer height */
        margin-top: 240px; 
        margin-bottom: 60px; 
+      }
+  
+  /* Hide elements that shouldn't be printed on every page *//*= add new ==*/
+      .no-repeat {
+        display: none;
       }
       
       /* Force page breaks */
