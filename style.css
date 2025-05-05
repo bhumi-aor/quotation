@@ -20,7 +20,7 @@
     }
     
     .thai-font {
-      font-family: 'Sarabun', Arial, sans-serif;
+      font-family: 'Noto Sans Thai', sans-serif;;
     }
     
     /* Print-specific styles */
@@ -59,7 +59,7 @@
       .main-content {
         /*margin-top: 220px;  Adjust based on your header height */
         /*margin-bottom: 60px;  Adjust based on your footer height */
-        margin-top: 280px; /*
+        margin-top: 300px; /*
       }
       
       /* Force page breaks */
