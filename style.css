@@ -759,21 +759,23 @@ video {
    display: flex;
    justify-content: space-between;
 }
-.footer {
+/*---------05052025------------*/
+/*.footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100%;*/
   /*background-color: #f1f5f9; *//* เทียบเท่า bg-slate-100 */
   /*color: #475569;*/ /* text-neutral-600 */
-  text-align: center;
+ /* text-align: center;
   font-size: 12px;
-  padding: 16px 0; /* py-4 */
-  display: flex;
+  padding: 16px 0; *//* py-4 */
+ /* display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-}
+}*/
+/*---------05052025------------*/
 /*
 .footer-content {
   flex: 1;
@@ -783,12 +785,12 @@ video {
   height: 100%;
   object-fit: contain;
 }*/
-.body {
-  padding-bottom: 80px; /* หรือเท่ากับความสูงของ footer */
-}
+/*.body {
+  padding-bottom: 80px;*/ /* หรือเท่ากับความสูงของ footer */
+/*}
 .wrapper {
   overflow: auto;
-}
+}*/
 /*------------------------------------*/
 /*.table {
   width: 100%;
@@ -831,7 +833,7 @@ video {
 @page {
   margin: 0;
 }
-/*====== 05042025 =========*/
+/*====== 05052025 =========*/
     @media print {
       body {
         margin: 0;
