@@ -933,6 +933,22 @@ video {
     .logo-img {
       height: 24px;
     }
+   /* Totals section */
+    .totals-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 16px;
+    }
+    
+    .totals-table {
+      width: 320px;
+    }
+    
+    /* Force element to new page if needed */
+    .avoid-break {
+      page-break-inside: avoid;
+    }
 /*========================*/
 /*------04052025-----------*/
 /*@media print {*/
