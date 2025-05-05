@@ -893,8 +893,9 @@ video {
       
       /* Main content spacing to avoid overlap with header and footer */
       .main-content {
-       margin-top: 220px;  /* Adjust based on your header height */
-       margin-bottom: 60px;  /* Adjust based on your footer height */
+       margin-top: 300px;  /* Adjust based on your header height */
+      /* margin-bottom: 60px;   Adjust based on your footer height */
+       margin-bottom: 60px; 
       }
       
       /* Force page breaks */
