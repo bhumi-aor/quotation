@@ -898,7 +898,7 @@ video {
       /* margin-bottom: 60px;   Adjust based on your footer height */
        margin-top: 240px; 
        margin-bottom: 60px; 
-       padding-bottom: 100px; /* ป้องกัน footer บังแถวสุดท้าย */
+       padding-bottom: 300px; /* ป้องกัน footer บังแถวสุดท้าย */
       }
   /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
      thead.print-header {
