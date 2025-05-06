@@ -929,29 +929,15 @@ video {
     }
     
     /* สไตล์อื่น ๆ */
-   /* .footer {
+    .footer {
       background-color: #f8f9fa;
       padding: 12px 56px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #e5e7eb;
-    }*/
-  .footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
- /* background-color: #f1f5f9;*/ /* เทียบเท่า bg-slate-100 */
-  color: #475569; /* text-neutral-600 */
-  text-align: center;
-  font-size: 12px;
-  padding: 16px 0; /* py-4 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  }
+    }
+  
     .footer-content {
       color: #64748b;
       font-size: 14px;
