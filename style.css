@@ -873,7 +873,7 @@ video {
         background-color: white;
         z-index: 1000;/*z-index: 100;*/
       }
-      
+            
       /* Table headers */
       thead {
         display: table-header-group;
@@ -895,9 +895,10 @@ video {
       }
       
       /* Main content spacing to avoid overlap with header and footer */
-      .main-content {
+    .main-content {
        /* margin-top: 220px;  Adjust based on your header height */
       /* margin-bottom: 60px;   Adjust based on your footer height */
+       position: fixed;
        margin-top: 240px; 
        margin-bottom: 60px; 
       }
@@ -916,6 +917,12 @@ video {
       tr {
         page-break-inside: avoid;
       }
+    .page-break { 
+      display:block;height:1px; page-break-before:always; 
+    }
+    .page-break-no{ 
+      display:block;height:1px; page-break-after:avoid; 
+     } 
     }
     
     /* สไตล์อื่น ๆ */
@@ -955,6 +962,14 @@ video {
 .force-new-page {
   page-break-before: always;
 }
+
+/* css ส่วนสำหรับการแบ่งหน้าข้อมูลสำหรับการพิมพ์ */
+@media all
+{
+    .page-break { display:none; }
+    .page-break-no{ display:none; }
+}
+
 /*========================*/
 /*------04052025-----------*/
 /*@media print {*/
