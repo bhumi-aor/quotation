@@ -736,7 +736,8 @@ video {
 /*Add for Thai font */
 
 .thai-font{
-  font-family: 'Noto Sans Thai', sans-serif;
+  /*font-family: 'Noto Sans Thai', sans-serif;*/
+  font-family: Arial, "times New Roman", tahoma;
 }
 /*ด้านซ้าย “เริ่มตรงกัน” ตามความยาวของบรรทัดที่ยาวที่สุด*/
 .inline-block{
