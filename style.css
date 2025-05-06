@@ -953,11 +953,14 @@ video {
     .footer-content {
       color: #64748b;
       font-size: 14px;
+      flex: 1;
     }
 
     .logo-img {
-      height: 24px;
+      height: 100px;
+      object-fit: contain;
     }
+
    /* Totals section */
     .totals-wrapper {
       width: 100%;
