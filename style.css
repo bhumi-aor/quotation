@@ -885,14 +885,14 @@ video {
       }
       
       /* Fixed footer */
-      .footer {
+     /* .footer {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
         background-color: white;
         z-index: 100;
-      }
+      }*/
       
       /* Main content spacing to avoid overlap with header and footer */
     .main-content {
@@ -959,7 +959,8 @@ video {
     }
 
     .logo-img {
-      height: 24px;
+      height: 100%;
+      object-fit: contain; /*height: 24px;*/
     }
 
    /* Totals section */
