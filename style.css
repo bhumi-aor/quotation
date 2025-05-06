@@ -957,8 +957,7 @@ video {
     }
 
     .logo-img {
-      height: 100%;
-      object-fit: contain;
+      height: 24px;
     }
 
    /* Totals section */
