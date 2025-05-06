@@ -873,7 +873,11 @@ video {
         background-color: white;
         z-index: 1000;/*z-index: 100;*/
       }
-            
+  .page {
+        page-break-after: always;
+        position: relative;
+        padding: 120px 40px 100px 40px;
+  }     
       /* Table headers */
       thead {
         display: table-header-group;
@@ -892,6 +896,7 @@ video {
         width: 100%;
         background-color: white;
         z-index: 100;
+        height: 80px;
       }
       
       /* Main content spacing to avoid overlap with header and footer */
@@ -900,7 +905,7 @@ video {
       /* margin-bottom: 60px;   Adjust based on your footer height */
        margin-top: 240px; 
        margin-bottom: 60px; 
-       padding-bottom: 300px; /* ป้องกัน footer บังแถวสุดท้าย */
+      /* padding-bottom: 300px;  ป้องกัน footer บังแถวสุดท้าย */
       }
   /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
      thead.print-header {
@@ -936,6 +941,8 @@ video {
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #e5e7eb;
+      height: 80px;
+      border-top: 1px solid #ccc;
     }
   
     .footer-content {
@@ -948,6 +955,10 @@ video {
       height: 100%;
       object-fit: contain; /*height: 24px;100%*/
     }
+  body {
+    padding-bottom: 100px; /* เพื่อเว้นระยะให้ Footer แสดงผลได้ */
+  }
+
 
    /* Totals section */
     .totals-wrapper {
