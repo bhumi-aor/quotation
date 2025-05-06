@@ -832,6 +832,9 @@ video {
 /*-------------*/
 @page {
   margin: 0;
+  @bottom-center {
+    content: "Page " counter(page);
+  }
 }
 /*====== 05052025 =========*/
    /* @media print {
