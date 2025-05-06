@@ -930,12 +930,15 @@ video {
     
     /* สไตล์อื่น ๆ */
     .footer {
+      position: fixed;
+      width: 100%;
       background-color: #f8f9fa;
       padding: 12px 56px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #e5e7eb;
+      z-index: 100;
     }
   
     .footer-content {
