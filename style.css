@@ -635,7 +635,9 @@ video {
   padding-top: 2rem; /* 32px *//*เพิ่มเติม*/
   padding-bottom: 2rem; /* 32px */
 }
-
+.pb-20{
+  padding-bottom: 5rem; /* 80px */
+}
 .pb-3{
   padding-bottom: 0.75rem;
 }
