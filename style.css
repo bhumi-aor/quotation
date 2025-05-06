@@ -832,10 +832,8 @@ video {
 /*-------------*/
 @page {
   margin: 0;
-  @bottom-center {
-    content: "Page " counter(page);
-  }
 }
+
 /*====== 05052025 =========*/
    /* @media print {
       body {
@@ -898,10 +896,12 @@ video {
     .main-content {
        /* margin-top: 220px;  Adjust based on your header height */
       /* margin-bottom: 60px;   Adjust based on your footer height */
-       position: fixed;
        margin-top: 240px; 
        margin-bottom: 60px; 
       }
+  /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
+     thead.print-header {
+        display: table-header-group;
   
   /* Hide elements that shouldn't be printed on every page *//*= add new ==*/
       .no-repeat {
