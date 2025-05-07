@@ -959,7 +959,9 @@ video {
   body {
     padding-bottom: 100px; /* เพื่อเว้นระยะให้ Footer แสดงผลได้ */
   }
-
+thead { display: table-header-group }
+tfoot { display: table-row-group }
+tr { page-break-inside: avoid }
 
    /* Totals section */
     .totals-wrapper {
