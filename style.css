@@ -736,8 +736,7 @@ video {
 /*Add for Thai font */
 
 .thai-font{
-  /*font-family: 'Noto Sans Thai', sans-serif;*/
-  font-family: Arial, "times New Roman", tahoma;
+  font-family: 'Noto Sans Thai', sans-serif;
 }
 /*ด้านซ้าย “เริ่มตรงกัน” ตามความยาวของบรรทัดที่ยาวที่สุด*/
 .inline-block{
@@ -874,11 +873,7 @@ video {
         background-color: white;
         z-index: 1000;/*z-index: 100;*/
       }
-  .page {
-        page-break-after: always;
-        position: relative;
-        padding: 120px 40px 100px 40px;
-  }     
+            
       /* Table headers */
       thead {
         display: table-header-group;
@@ -886,7 +881,7 @@ video {
       
       /* Table footers */
       tfoot {
-         {display: table-footer-group; /*display: table-row-group ;*/
+        display: table-footer-group;
       }
       
       /* Fixed footer */
@@ -897,7 +892,6 @@ video {
         width: 100%;
         background-color: white;
         z-index: 100;
-        height: 80px;
       }
       
       /* Main content spacing to avoid overlap with header and footer */
@@ -906,7 +900,7 @@ video {
       /* margin-bottom: 60px;   Adjust based on your footer height */
        margin-top: 240px; 
        margin-bottom: 60px; 
-      /* padding-bottom: 300px;  ป้องกัน footer บังแถวสุดท้าย */
+       padding-bottom: 300px; /* ป้องกัน footer บังแถวสุดท้าย */
       }
   /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
      thead.print-header {
@@ -942,8 +936,6 @@ video {
       justify-content: space-between;
       align-items: center;
       border-top: 1px solid #e5e7eb;
-      height: 80px;
-      border-top: 1px solid #ccc;
     }
   
     .footer-content {
@@ -956,9 +948,6 @@ video {
       height: 100%;
       object-fit: contain; /*height: 24px;100%*/
     }
-  body {
-    padding-bottom: 50px/*100px;  เพื่อเว้นระยะให้ Footer แสดงผลได้ */
-  }
 
    /* Totals section */
     .totals-wrapper {
@@ -986,57 +975,7 @@ video {
     .page-break { display:none; }
     .page-break-no{ display:none; }
 }
-/*-----New--Overlap 07052025---------*/
-/*.shell {
-  display: grid;
-  grid-template-columns: 0 1fr 0;
-  grid-template-rows: auto 8em 1fr auto;
-}
 
-@media (min-width: 600px) {
-  .shell {
-    grid-template-columns: 20px 1fr 20px;
-  }
-}
-*/
-/* overlap */
-/*.shell:before {
-  content: "";
-  grid-column: 1/-1;
-  grid-row: 1/3;
-  background-color: #063;
-}
-
-.shell-header {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-
-  color: #FFF;
-  background-color: #063;
-  padding: 35px 20px;
-}
-
-.shell-body {
-  grid-row: 2 / 4;
-  grid-column: 2 / 3; 
-  min-height: 50vh;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow:  0px 0px 20px rgba(0, 0, 0, 0.25);
-  background-color: #FFF;
-}
-
-.shell-footer {
-  grid-column: 2/3;
-  grid-row: -1;
-  padding: 20px; 
-}
-
-body {
-  margin:0;
-  font-family: sans-serif;
-}*/
-  /*-----New--Overlap 07052025---------*/
 /*========================*/
 /*------04052025-----------*/
 /*@media print {*/
