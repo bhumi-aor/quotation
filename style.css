@@ -906,7 +906,6 @@ video {
      thead.print-header {
         display: table-header-group;
      }
-  
   /* Hide elements that shouldn't be printed on every page *//*= add new ==*/
       .no-repeat {
         display: none;
