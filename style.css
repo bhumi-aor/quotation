@@ -957,7 +957,7 @@ video {
       object-fit: contain; /*height: 24px;100%*/
     }
   body {
-    padding-bottom: 100px; /* เพื่อเว้นระยะให้ Footer แสดงผลได้ */
+    padding-bottom: 50px/*100px;  เพื่อเว้นระยะให้ Footer แสดงผลได้ */
   }
 
    /* Totals section */
