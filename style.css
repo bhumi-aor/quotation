@@ -736,7 +736,7 @@ video {
 .text-white{
   color: #fff;
 }
-.min-w-300{
+.min-w-[300]{
   min-width: 300px;
 }
 .w-half{
@@ -770,22 +770,13 @@ video {
 /*ด้านซ้าย “เริ่มตรงกัน” ตามความยาวของบรรทัดที่ยาวที่สุด*/
 .inline-block{
   display: inline-block;
+} 
+.signature-line {
+    display: inline-block;
+    border-bottom:1px solid #000;
+    width: 200px;
+    height: 1em;
 }
-/* line break*/
-   .line-break {
-        text-decoration: underline;
-        display: inline-block;
-        width: 100%;}
-    .line-break-1 {
-        display: inline-block;
-        width: 100%;
-        }
-    .signature-line {
-      display: inline-block;
-      border-bottom:1px solid #000;
-      width: 200px;
-      height: 1em;
-    }
 /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
 .content-block {
   /* These prevent page breaks inside each content block */
@@ -803,6 +794,7 @@ video {
 .detail-line {
   margin: 2px 0;
 }
+/*-------------------*/
 /* Footer styling for repeating on each page */
     .footer {
       position: fixed;
