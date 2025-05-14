@@ -967,6 +967,11 @@ video {
   .signature-line {
         width: 200px;
       }
+  /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
+  .section {
+    page-break-inside: avoid;   /* สำหรับ browser ทั่วไป */
+    break-inside: avoid;        /* สำหรับ spec ใหม่ */
+  }  
 }
 
 
