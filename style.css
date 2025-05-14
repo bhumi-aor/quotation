@@ -772,14 +772,14 @@ video {
   display: inline-block;
 }
 /* line break*/
-    .line-break {
+   /* .line-break {
         text-decoration: underline;
         display: inline-block;
         width: 100%;}
     .line-break-1 {
         display: inline-block;
         width: 100%;
-        }
+        }*/
     .signature-line {
       display: inline-block;
       border-bottom:1px solid #000;
@@ -968,14 +968,20 @@ video {
         width: 200px;
       }
   /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
-  .group {
+  .section {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-
   .line-break {
-    display: block;     /* ทำให้ขึ้นบรรทัดใหม่ */
-    margin-bottom: 2px; /* ระยะห่างระหว่างบรรทัด */
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .line-break-1 {
+    display: block;
+    margin-left: 16px;
+    margin-bottom: 2px;
   }
 }
 
