@@ -969,9 +969,17 @@ video {
       }
   /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
   .section {
-    page-break-inside: avoid;   /* สำหรับ browser ทั่วไป */
-    break-inside: avoid;        /* สำหรับ spec ใหม่ */
-  }  
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+  .section-header {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .section-detail {
+    margin-left: 16px;
+  }
 }
 
 
