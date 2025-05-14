@@ -772,20 +772,37 @@ video {
   display: inline-block;
 }
 /* line break*/
-   /* .line-break {
+   .line-break {
         text-decoration: underline;
         display: inline-block;
         width: 100%;}
     .line-break-1 {
         display: inline-block;
         width: 100%;
-        }*/
+        }
     .signature-line {
       display: inline-block;
       border-bottom:1px solid #000;
       width: 200px;
       height: 1em;
     }
+/* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
+.content-block {
+  /* These prevent page breaks inside each content block */
+  break-inside: avoid;
+  page-break-inside: avoid; /* For older browsers */
+  margin-bottom: 20px;
+}
+
+.heading {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.detail-line {
+  margin: 2px 0;
+}
 /* Footer styling for repeating on each page */
     .footer {
       position: fixed;
@@ -968,20 +985,10 @@ video {
         width: 200px;
       }
   /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
-  .section {
-    page-break-inside: avoid;
+  .content-block {
     break-inside: avoid;
-  }
-  .line-break {
-    display: block;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  .line-break-1 {
-    display: block;
-    margin-left: 16px;
-    margin-bottom: 2px;
+    page-break-inside: avoid;
+    margin-bottom: 15px;
   }
 }
 
