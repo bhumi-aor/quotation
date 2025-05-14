@@ -839,6 +839,12 @@ video {
     .logo-img {
       height: 24px;
     }
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/
         @page  {
