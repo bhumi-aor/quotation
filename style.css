@@ -968,17 +968,14 @@ video {
         width: 200px;
       }
   /* ต้องการให้หัวข้ออยู่ติดกับเนื้อหาเสมอ */
-  .section {
+  .group {
     page-break-inside: avoid;
     break-inside: avoid;
-    margin-bottom: 16px;
   }
-  .section-header {
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  .section-detail {
-    margin-left: 16px;
+
+  .line-break {
+    display: block;     /* ทำให้ขึ้นบรรทัดใหม่ */
+    margin-bottom: 2px; /* ระยะห่างระหว่างบรรทัด */
   }
 }
 
