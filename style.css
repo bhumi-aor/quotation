@@ -543,7 +543,7 @@ video {
 }
 
 .h-12{
-  height: 3rem;
+  height: 48px;/*3rem;*//*แก้ไข*/
 }
 
 .w-1\/2{
@@ -670,6 +670,10 @@ video {
   padding-right: 1rem;
 }
 
+.pt-3 {
+        padding-top: 0.75rem; /* 12px *//*เพิ่มเติม*/
+    }
+
 .text-center{
   text-align: center;
 }
@@ -732,19 +736,6 @@ video {
 .text-white{
   color: #fff;
 }
-
-/*Add for Thai font */
-
-.thai-font{
-  font-family: 'Noto Sans Thai', sans-serif;
-}
-/*ด้านซ้าย “เริ่มตรงกัน” ตามความยาวของบรรทัดที่ยาวที่สุด*/
-.inline-block{
-  display: inline-block;
-}
-.w-max{
-  width: max-content;
-}
 .min-w-300{
   min-width: 300px;
 }
@@ -761,195 +752,56 @@ video {
    display: flex;
    justify-content: space-between;
 }
-/*---------05052025------------*/
-/*.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;*/
-  /*background-color: #f1f5f9; *//* เทียบเท่า bg-slate-100 */
-  /*color: #475569;*/ /* text-neutral-600 */
- /* text-align: center;
-  font-size: 12px;
-  padding: 16px 0; *//* py-4 */
- /* display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-}*/
-/*---------05052025------------*/
-/*
-.footer-content {
-  flex: 1;
-}*/
-/*
-.logo-img {
-  height: 100%;
-  object-fit: contain;
-}*/
-/*.body {
-  padding-bottom: 80px;*/ /* หรือเท่ากับความสูงของ footer */
-/*}
-.wrapper {
-  overflow: auto;
-}*/
-/*------------------------------------*/
-/*.table {
-  width: 100%;
-  font-size: 12px;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-.th, td {
-  border-bottom: 1px solid #ccc;
-  padding: 4px;
-  text-align: left;
-}
-.th {
-  font-weight: bold;
-}
-.table-fixed{
-  table-layout: fixed;
-}*/
-/* @media print {
-  body {
-    margin-top: 120px;*/ /* เว้นที่สำหรับ header */
- /* }*/
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-  /*.print-header {
-    display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    padding: 10px 40px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .no-print {
-    display: none;
-  }
-}*/
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/*-------------*/
+/*  ------- original --------
 @page {
   margin: 0;
 }
 
-/*====== 05052025 =========*/
-   /* @media print {
-      body {
-        margin: 0;
-      }*/
-
-      /* ป้องกันหัวทับเนื้อหา */
-     /* .main-content {
-        margin-top: 300px;*/ /* ปรับให้เหมาะกับความสูง header */
-     /* }*/
-
-      /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
-     /* thead.print-header {
-        display: table-header-group;
-      }
-
-      .no-print {
-        display: none;
-      }
-
-      .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    }*//*===On cancel====*/
-/*====== 05052025 =========*/
 @media print {
-      /* Fixed header */
-      .page-header {
-        position: fixed;
-        top: 0;
-        left: 0;
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+*/
+/*----------------------เพิ่มเดิม-------------------------*/
+/*Add for Thai font */
+.thai-font{
+  font-family: 'Tahoma', Arial, sans-serif;/* Noto Sans Thai */
+}
+/*ด้านซ้าย “เริ่มตรงกัน” ตามความยาวของบรรทัดที่ยาวที่สุด*/
+.inline-block{
+  display: inline-block;
+}
+/* line break*/
+    .line-break {
+        text-decoration: underline;
+        display: inline-block;
+        width: 100%;}
+    .line-break-1 {
+        display: inline-block;
         width: 100%;
-        background-color: white;
-        z-index: 1000;/*z-index: 100;*/
-      }
-            
-      /* Table headers */
-      thead {
-        display: table-header-group;
-      }
-      
-      /* Table footers */
-      tfoot {
-        display: table-footer-group;
-      }
-      
-      /* Fixed footer */
-      .footer {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        z-index: 100;
-      }
-      
-      /* Main content spacing to avoid overlap with header and footer */
-    .main-content {
-       /* margin-top: 220px;  Adjust based on your header height */
-      /* margin-bottom: 60px;   Adjust based on your footer height */
-       margin-top: 240px; 
-       margin-bottom: 60px; 
-       padding-bottom: 300px; /* ป้องกัน footer บังแถวสุดท้าย */
-      }
-  /* ตั้ง header ให้พิมพ์ซ้ำทุกหน้า */
-     thead.print-header {
-        display: table-header-group;
-     }
-  /* Hide elements that shouldn't be printed on every page *//*= add new ==*/
-      .no-repeat {
-        display: none;
-      }
-      
-      /* Force page breaks */
-      .page-break {
-        page-break-before: always;
-      }
-      
-      /* Prevent page breaks inside rows */
-      tr {
-        page-break-inside: avoid;
-      }
-    .page-break { 
-      display:block;height:1px; page-break-before:always; 
+        }
+    .signature-line {
+      display: inline-block;
+      border-bottom:1px solid #e0e0eb/*#000;*/
+      width: 200px;
+      height: 1em;
     }
-    .page-break-no{ 
-      display:block;height:1px; page-break-after:avoid; 
-     } 
-    }
-    
-    /* สไตล์อื่น ๆ */
+/* Footer styling for repeating on each page */
     .footer {
-      background-color: #f8f9fa;
-      padding: 12px 56px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background-color: white;
+      border-top: 1px solid #e5e7eb;
+      z-index: 100;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid #e5e7eb;
+      padding: 10px 56px;
     }
-  
-    .footer-content {
-      color: #64748b;
-      font-size: 14px;
-      flex: 1;
-    }
-
-    .logo-img {
-      height: 100%;
-      object-fit: contain; /*height: 24px;100%*/
-    }
-
-   /* Totals section */
+/* Totals section */
     .totals-wrapper {
       width: 100%;
       display: flex;
@@ -961,106 +813,154 @@ video {
       width: 320px;
     }
     
-    /* Force element to new page if needed */
-    .avoid-break {
-      page-break-inside: avoid;
-    }
-.force-new-page {
-  page-break-before: always;
-}
-
-/* css ส่วนสำหรับการแบ่งหน้าข้อมูลสำหรับการพิมพ์ */
-@media all
-{
-    .page-break { display:none; }
-    .page-break-no{ display:none; }
-}
-
-/*========================*/
-/*------04052025-----------*/
-/*@media print {*/
-      /* Header that will appear on every page */
-      /* .page-header {
-       position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: white;
-        z-index: 1000;
-      }*/
-      /* Table headers that will appear on every page */
-   /*  .thead {
-    display: table-header-group;
-     }*/
-     /* Table footers that will appear on every page */
- /*    .tfoot {
-    display: table-footer-group;
-     }*/
-
-      /* Add top margin to main content to prevent overlap with fixed header */
-      /*.main-content {
-        margin-top: 170px;*/ /* Adjust based on header height */
-     /* }*/
-      
-      /* Hide elements that shouldn't be printed on every page */
-     /* .no-repeat {
-        display: none;
-      }*/
-      
-      /* Footer on every page */
-     /* .footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    }*/
-/*----------------------*/
-/* Existing styles can be kept */
-   /* .footer {
-      background-color: #f8f9fa;
-      padding: 12px 56px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-top: 1px solid #e5e7eb;
+    /* Data table styles */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
     }
     
+    .data-table th, .data-table td {
+      padding: 8px;
+      text-align: left;
+      font-size: 12px;
+    }
+    
+    /* Payment and notes sections positioned relatively */
+    .payment-notes-container {
+      position: relative;
+      z-index: 1;
+    }
+/* Footer */
     .footer-content {
       color: #64748b;
       font-size: 14px;
-    }
-    
+    }    
     .logo-img {
       height: 24px;
-    }*/
-/*----------------------*/
-/* @media print {
-  body {
-    -webkit-print-color-adjust: exact; *//*Original*/
- /* }
-}*/
- /* footer {
-    position: fixed;
-    bottom: 0;
-  }*/
+    }
+/*---------------------------*/
+/*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/
+        @page  {
+              /*  size: A4;
+                margin: 20mm; */
+                margin: 0px 0px 50px 0px;
+               /* page-orientation: value;*/
+                
+                @top-left{
+                    content: element(headerLeft);
+                    border-bottom:2px solid #434190;
+                }
 
-/*.body {
-    position: absolute;
-}*/
-/*==========================*/
-/*@page {
-   break-before: auto;
-   margin: 0px;
-   width: 736px;
-   height: 1103px;
-   position: relative;
-}*/
-/*@page-break {
-    position: absolute;
-    bottom: 0;
+                @top-center{
+                    border-bottom:2px solid #434190;
+                }
+
+                @top-right{
+                    content: element(headerRight);
+                    border-bottom:2px solid #434190;
+                }
+
+                @bottom-right {
+                    content: element(footerRight);
+                    border-top:1px solid #434190;
+                }
+
+                @bottom-center{
+                    content: counter(page) ' / ' counter(pages);
+                    border-top:1px solid #434190;
+                    font-size:11px;/*8pt;*/
+                }
+
+                @bottom-left{
+                    content: element(footerLeft);
+                    border-top:1px solid #434190;
+                
+               /* @bottom-left {
+                    content: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAY1rXzkYea2RLdMrjaIXaF8Z-Ak_vPNcjj4fNkIctqYHFNpdo_0oqHraONom4xjes4bidoFYeo0uDlVv6CTfPllIn00UpMc9UoRzGlKuy-y8CrGl8Dp2gGea1FFFXzudU8EITyFk6-Mwd1MQZ4aG0B9xkH_eIJN5Si02a7dLjIyuSrDK9XaGbyOQu984d/s72/tostem_up_new.jpg');
+                    border-top: 1px solid #434190;
+                    width: 20mm;
+                    padding-top: 2mm;
+                }*/
+            }
+  .footerLeft{
+       position: running(footerLeft);
+    }
+
+    .footerLeft img{
+        width:20mm;
+    }
+    
+    .footerRight{
+        position: running(footerRight);
+        text-align: right;
+        font-size:8pt;
+    }
+/*-----------------------------------*/
+
+@media print {
+  /* Basic page setup */
+  @page {
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 20px;
-    padding: 20px;
-    background-color: red;
-    text-align: center;
-}*/
+  }
+  /* This is the key technique: use table-header-group */
+  .repeating-header {
+    display: table-header-group;
+  }
+  
+  /* Style the header elements */
+  .header-content {
+    height: 89px;/*100px*/
+    width: 100%;
+    background-color: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .customer-info {
+    height: 165px; /*155px*/
+    width: 100%;
+    background-color: #f1f5f9 !important; 
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  /* Main content no longer needs margin-top as the table structure handles spacing */
+  .main-content {
+    page-break-inside: auto;
+  }
+
+ /* Table styles */
+  table {
+    page-break-inside: auto;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tbody {
+    display: table-row-group;
+  }
+  
+  /* Prevent unwanted breaks */
+  .payment-details, .notes-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #totals-section {
+    page-break-inside: avoid;
+  }
+  .signature-line {
+        width: 200px;
+      }
+}
+
+
