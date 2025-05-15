@@ -865,48 +865,35 @@ video {
 
                 @top-left{
                     content: element(headerLeft);
-                    border-bottom:2px solid #434190;
+                    border-bottom:1px solid #434190;
                 }
 
                 @top-center{
-                    border-bottom:2px solid #434190;
+                    border-bottom:1px solid #434190;
                 }
 
                 @top-right{
                     content: element(headerRight);
-                    border-bottom:2px solid #434190;
+                    border-bottom:1px solid #434190;
                 }
 
                 @bottom-right {
                     content: element(footerRight);
-                    border-top:2px solid #434190;
+                    border-top:1px solid #434190;
                 }
 
                 @bottom-center{
                     content: counter(page) ' / ' counter(pages);
-                    border-top:2px solid #434190;
-                    font-size:8pt;
+                    border-top:1px solid #434190;
+                    font-size:11px;/*8pt;*/
                 }
 
                 @bottom-left{
                     content: element(footerLeft);
-                    border-top:2px solid #434190;
+                    border-top:1px solid #434190;
                 }
             }
-
-            .headerLeft{
-                position: running(headerLeft);
-                font-size:12pt;
-            }
-
-            .headerRight{
-                position: running(headerRight);
-                font-size:8pt;
-                font-style: italic;
-                text-align: right;
-                color:#667eea;
-            }
-
+/*-------------------------------------*/
             .footerLeft{
                 position: running(footerLeft);
             }
@@ -918,7 +905,7 @@ video {
             .footerRight{
                 position: running(footerRight);
                 text-align: right;
-                font-size:8pt;
+                font-size:11px;/*8pt;*/
             }
 /*-----------------------------------*/
 
