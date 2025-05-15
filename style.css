@@ -888,32 +888,19 @@ video {
                     font-size:8pt;
                 }
 
-                @bottom-left{
+          /*      @bottom-left{
                     content: element(footerLeft);
                     border-top:1px solid #434190;
-                }
+                }*/
             }
 
-            .headerLeft{
-                position: running(headerLeft);
-                font-size:12pt;
-            }
-
-            .headerRight{
-                position: running(headerRight);
-                font-size:8pt;
-                font-style: italic;
-                text-align: right;
-                color:#667eea;
-            }
-
-            .footerLeft{
+           /* .footerLeft{
                 position: running(footerLeft);
             }
 
             .footerLeft img{
                 width:20mm;
-            }
+            }*/
 
             .footerRight{
                 position: running(footerRight);
