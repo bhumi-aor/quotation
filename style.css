@@ -858,7 +858,7 @@ video {
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/                
              @page  {
-                margin: 0px 0px 50px 0px;
+                margin: 0px 0px 100px 0px;
 
                 @top-left{
                     content: element(headerLeft);
@@ -923,8 +923,7 @@ video {
 @media print {
   /* Basic page setup */
   @page {
-      /*margin: 0;*/
-     margin: 0px 0px 50px 0px;
+        margin: 0;
   }
   
   body {
