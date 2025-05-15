@@ -858,6 +858,7 @@ video {
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/                
              @page  {
+                size: A4;
                 margin: 0px 0px 50px 0px;
 
                 @top-left{
@@ -882,7 +883,7 @@ video {
                 @bottom-center{
                     content: counter(page) ' / ' counter(pages);
                     border-top:1px solid #434190;
-                    font-size:11px;/*8pt;*/
+                    font-size: 8pt;
                 }
 
                 @bottom-left{
