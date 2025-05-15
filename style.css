@@ -858,10 +858,7 @@ video {
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/                
              @page  {
-               /*  size: A4;
-                margin: 20mm; */
                 margin: 0px 0px 50px 0px;
-               /* page-orientation: value;*/
 
                 @top-left{
                     content: element(headerLeft);
@@ -894,6 +891,19 @@ video {
                 }
             }
 /*-------------------------------------*/
+            .headerLeft{
+                position: running(headerLeft);
+                font-size:12pt;
+            }
+
+            .headerRight{
+                position: running(headerRight);
+                font-size:8pt;
+                font-style: italic;
+                text-align: right;
+                color:#667eea;
+            }
+
             .footerLeft{
                 position: running(footerLeft);
             }
@@ -905,8 +915,9 @@ video {
             .footerRight{
                 position: running(footerRight);
                 text-align: right;
-                font-size:11px;/*8pt;*/
+                font-size:8pt;
             }
+
 /*-----------------------------------*/
 
 @media print {
