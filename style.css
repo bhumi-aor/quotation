@@ -888,32 +888,25 @@ video {
                     font-size:8pt;
                 }
 
-          /*      @bottom-left{
+                @bottom-left{
                     content: element(footerLeft);
                     border-top:1px solid #434190;
-                }*/
+                }
             }
 
-           /* .footerLeft{
+           .footerLeft{
                 position: running(footerLeft);
             }
 
             .footerLeft img{
                 width:20mm;
-            }*/
+            }
 
             .footerRight{
                 position: running(footerRight);
                 text-align: right;
                 font-size:8pt;
             }
-             /*   
-                @bottom-right {
-                    content: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAY1rXzkYea2RLdMrjaIXaF8Z-Ak_vPNcjj4fNkIctqYHFNpdo_0oqHraONom4xjes4bidoFYeo0uDlVv6CTfPllIn00UpMc9UoRzGlKuy-y8CrGl8Dp2gGea1FFFXzudU8EITyFk6-Mwd1MQZ4aG0B9xkH_eIJN5Si02a7dLjIyuSrDK9XaGbyOQu984d/s72/tostem_up_new.jpg');
-                    border-top: 1px solid #434190;
-                    width: 20mm;
-                    padding-top: 2mm;
-                }*/
 /*-----------------------------------*/
 
 @media print {
