@@ -862,7 +862,7 @@ video {
 }
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/
-        @page  {
+       @page  {
               /*  size: A4;
                 margin: 20mm; */
                 margin: 0px 0px 50px 0px;
@@ -896,6 +896,7 @@ video {
                @bottom-left{
                     content: element(footerLeft);
                     border-top:1px solid #434190;
+               }
              /*   
                 @bottom-right {
                     content: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAY1rXzkYea2RLdMrjaIXaF8Z-Ak_vPNcjj4fNkIctqYHFNpdo_0oqHraONom4xjes4bidoFYeo0uDlVv6CTfPllIn00UpMc9UoRzGlKuy-y8CrGl8Dp2gGea1FFFXzudU8EITyFk6-Mwd1MQZ4aG0B9xkH_eIJN5Si02a7dLjIyuSrDK9XaGbyOQu984d/s72/tostem_up_new.jpg');
@@ -904,6 +905,7 @@ video {
                     padding-top: 2mm;
                 }*/
             }
+/*------------------------------------*/
   .footerLeft{
        position: running(footerLeft);
     }
