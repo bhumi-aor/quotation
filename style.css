@@ -854,12 +854,7 @@ video {
       padding: 0;
       color: #333;
     }
-.footer-img {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  height: 20mm;
-}
+
 /*---------------------------*/
 /*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/                
             @page  {
@@ -937,7 +932,8 @@ video {
 @media print {
   /* Basic page setup */
   @page {
-    margin: 0;
+    /*margin: 0;*/
+     margin: 0px 0px 50px 0px;
   }
   
   body {
