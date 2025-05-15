@@ -803,12 +803,12 @@ video {
       right: 0;
       height: 50px;
       background-color: white;
-      border-top: 1px solid #e5e7eb;
+     /* border-top: 1px solid #e5e7eb;*/
       z-index: 100;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 10px 56px;
+    /*  align-items: center;*/
+    /*  padding: 10px 56px;*/
     }
 /* Totals section */
     .totals-wrapper {
@@ -835,7 +835,7 @@ video {
       font-size: 12px;
     }
     
-    /* Payment and notes sections positioned relatively */
+/* Payment and notes sections positioned relatively */
     .payment-notes-container {
       position: relative;
       z-index: 1;
@@ -889,7 +889,7 @@ video {
 
                 @bottom-center{
                     content: counter(page) ' / ' counter(pages);
-                  /*  border-top:1px solid #434190;*/
+                    border-top:1px solid #434190;
                     font-size:11px;/*8pt;*/
                 }
 
