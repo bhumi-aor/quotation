@@ -882,10 +882,10 @@ video {
                     border-bottom:2px solid #434190;
                 }
 
-                @bottom-right {
+             /*   @bottom-right {
                     content: element(footerRight);
                     border-top:1px solid #434190;
-                }
+                }*/
 
                 @bottom-center{
                     content: counter(page) ' / ' counter(pages);
