@@ -856,7 +856,68 @@ video {
     }
 
 /*---------------------------*/
+/*From : https://medium.com/printcss/printcss-running-headers-and-footers-3bef60a60d62*/                
+             @page  {
+                size: A4;
+                margin: 0px 0px 50px 0px;
 
+                @top-left{
+                    content: element(headerLeft);
+                    border-bottom:2px solid #434190;
+                }
+
+                @top-center{
+                    border-bottom:2px solid #434190;
+                }
+
+                @top-right{
+                    content: element(headerRight);
+                    border-bottom:2px solid #434190;
+                }
+
+                @bottom-right {
+                    content: element(footerRight);
+                    border-top:1px solid #434190;
+                }
+
+                @bottom-center{
+                    content: counter(page) ' / ' counter(pages);
+                    border-top:1px solid #434190;
+                    font-size: 8pt;
+                }
+
+                @bottom-left{
+                    content: element(footerLeft);
+                    border-top:1px solid #434190;
+                }
+            }
+/*-------------------------------------*/
+            .headerLeft{
+                position: running(headerLeft);
+                font-size:12pt;
+            }
+
+            .headerRight{
+                position: running(headerRight);
+                font-size:8pt;
+                font-style: italic;
+                text-align: right;
+                color:#667eea;
+            }
+
+            .footerLeft{
+                position: running(footerLeft);
+            }
+
+            .footerLeft img{
+                width:20mm;
+            }
+
+            .footerRight{
+                position: running(footerRight);
+                text-align: right;
+                font-size:8pt;
+            }
 
 /*-----------------------------------*/
 
