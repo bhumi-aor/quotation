@@ -802,7 +802,7 @@ video {
       left: 0;
       right: 0;
       height: 50px;
-      background-color: white;
+     /* background-color: white;*/
      /* border-top: 1px solid #e5e7eb;*/
       z-index: 100;
       display: flex;
