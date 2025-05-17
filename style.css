@@ -823,7 +823,7 @@ video {
        display: flex;
       justify-content: space-between; 
       align-items: center;
-     padding: 10px 20px;/*56px;*/
+     padding: 10px 56px;
     }
 /* Totals section */
     .totals-wrapper {
@@ -850,25 +850,11 @@ video {
       font-size: 12px;
     }
 
- /* Fix for the signature section */
-    .notes-section {
-      margin-bottom: 60px; /* Add space before footer */
-    }
-
 /* Payment and notes sections positioned relatively */
     .payment-notes-container {
       position: relative;
       z-index: 1;
-    }
- /* Ensure proper padding between sections */
-    .payment-details {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      
-  /* Make sure tables don't overflow */    
-  table {
-      table-layout: fixed;
-    }  
+    }      
 
 /* Footer */
     .footer-content {
