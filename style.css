@@ -895,8 +895,7 @@ video {
   /* Main content no longer needs margin-top as the table structure handles spacing */
   .main-content {
     page-break-inside: auto;
-    overflow: auto; /* Adds scrollbars when content overflows */
-    max-height: calc(100vh - [100]px); /* Adjust based on your footer height */
+    margin-bottom: 100px; /*เพิ่มเติม*/
   }  
 
  /* Table styles */
