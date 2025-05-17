@@ -896,7 +896,7 @@ video {
   .main-content {
     page-break-inside: auto;
     overflow: auto; /* Adds scrollbars when content overflows */
-    max-height: calc(100vh - [50]px); /* Adjust based on your footer height */
+    max-height: calc(100vh - [100]px); /* Adjust based on your footer height */
   }  
 
  /* Table styles */
