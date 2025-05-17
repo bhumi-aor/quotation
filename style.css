@@ -794,6 +794,7 @@ video {
 .detail-line {
   margin: 2px 0;
 }
+
 /*-------------------*/
 /* Footer styling for repeating on each page */
     .footer {
@@ -892,7 +893,9 @@ video {
   /* Main content no longer needs margin-top as the table structure handles spacing */
   .main-content {
     page-break-inside: auto;
-  }
+    overflow: auto; /* Adds scrollbars when content overflows */
+    max-height: calc(100vh - [50]px); /* Adjust based on your footer height */
+  }  
 
  /* Table styles */
   table {
@@ -925,15 +928,6 @@ video {
     page-break-inside: avoid;
     margin-bottom: 15px;
   }
-  /*-------------------------*/
-  .headerRight {
-    position: fixed;
-    top: 10px;
-    right: 30px;
-    font-size: 8pt;
-    font-style: italic;
-    color: #667eea;
   }
-}
 
 
