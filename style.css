@@ -817,13 +817,13 @@ video {
       left: 0;
       right: 0;
       height: 50px; 
-     /* background-color: white;*/
-     /* border-top: 1px solid #e5e7eb;*/
+      /*background-color: white;*/
+     border-top: 1px solid #e5e7eb;
       z-index: 100;
        display: flex;
       justify-content: space-between; 
-    /*  align-items: center;
-     padding: 10px 56px;*/
+      align-items: center;
+     padding: 10px 56px;
     }
 /* Totals section */
     .totals-wrapper {
@@ -862,9 +862,9 @@ video {
       font-size: 14px;
     }    
     .logo-img {
-      /*height: 24px;*/
-      height: 100%;
-      object-fit: contain;
+      height: 24px;
+      /*height: 100%;
+      object-fit: contain;*/
     }
  body {
       font-family: Arial, sans-serif;
