@@ -895,7 +895,6 @@ video {
   /* Main content no longer needs margin-top as the table structure handles spacing */
   .main-content {
     page-break-inside: auto;
-    margin-bottom: 100px; /*เพิ่มเติม*/
   }  
 
  /* Table styles */
