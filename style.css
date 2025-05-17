@@ -908,6 +908,7 @@ video {
   
   tbody {
     display: table-row-group;
+    margin-bottom: 50px; 
   }
   
   /* Prevent unwanted breaks */
