@@ -942,6 +942,24 @@ video {
     page-break-inside: avoid;
     margin-bottom: 15px;
   }
+   /* Add page break to ensure footer doesn't break across pages */
+      .footer {
+        break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      
+      /* This is the magic - use running header/footer */
+      #footer-content {
+        position: running(footer);
+      }
+      
+      /* And place it in the bottom margin of every page */
+      @page {
+        @bottom-center {
+          content: element(footer);
+        }
+      }
   
  }
 
