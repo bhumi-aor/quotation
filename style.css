@@ -788,7 +788,8 @@ video {
 .heading {
   text-decoration: underline;
   font-weight: bold;
-  margin-bottom: 5px;
+ /* margin-bottom: 5px;*/
+   margin-bottom: 15px;
 }
 
 .detail-line {
@@ -796,27 +797,42 @@ video {
 }
 
 /*-------------------*/
-/* Footer styling for repeating on each page */
+/* Modify the footer positioning to ensure it stays at bottom */
     .footer {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 50px;
-     /* background-color: white;*/
-     /* border-top: 1px solid #e5e7eb;*/
-      z-index: 100;
+      padding: 10px 20px;
+      background-color: white;
+      z-index: 1000;
+      border-top: 1px solid #434190;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+    }
+/* Footer styling for repeating on each page */
+  /*  .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px; */
+     /* background-color: white;*/
+     /* border-top: 1px solid #e5e7eb;*/
+     /* z-index: 100;
+    /*  display: flex;
+      justify-content: space-between; */
     /*  align-items: center;*/
     /*  padding: 10px 56px;*/
-    }
+    }*/
 /* Totals section */
     .totals-wrapper {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       margin-top: 16px;
+      page-break-inside: avoid; /* เพิ่มเติม */
     }
     
     .totals-table {
@@ -835,21 +851,50 @@ video {
       text-align: left;
       font-size: 12px;
     }
-    
+
+ /* Fix for the signature section */
+    .notes-section {
+      margin-bottom: 60px; /* Add space before footer */
+    }
+
+/* Add padding to main content to prevent overlap with footer */
+.main-content {
+      padding-bottom: 80px; /* Adjust this value based on your footer height */
+    } 
+
 /* Payment and notes sections positioned relatively */
     .payment-notes-container {
       position: relative;
       z-index: 1;
+      page-break-inside: avoid; /* เพิ่มเติม */
+    }
+ /* Ensure proper padding between sections */
+    .payment-details {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      
+  /* Make sure tables don't overflow */    
+  table {
+      table-layout: fixed;
+    }  
+/* Better table row spacing */
+    tbody tr td {
+      padding: 8px 4px;
     }
 /* Footer */
     .footer-content {
-      color: #64748b;
-      font-size: 14px;
+      font-size: 12px;
+      color: #434190;
+     /* color: #64748b;
+      font-size: 14px;*/
     }    
     .logo-img {
       /*height: 24px;*/
+      /*
       height: 100%;
-      object-fit: contain;
+      object-fit: contain;*/
+      height: 40px;
+      width: auto;
     }
  body {
       font-family: Arial, sans-serif;
@@ -908,7 +953,6 @@ video {
   
   tbody {
     display: table-row-group;
-    margin-bottom: 50px; 
   }
   
   /* Prevent unwanted breaks */
