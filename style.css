@@ -877,13 +877,10 @@ video {
 @media print {
   /* Basic page setup */
   @page {
-        /*margin: 0;*/
-      margin-bottom: 60px; /* Space for footer */
-  }
-  
+      margin: 0;
+  }  
   body {
-    /*margin: 0;*/
-    margin-bottom: 60px; /* Add space for footer at bottom of content */
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -945,17 +942,7 @@ video {
     page-break-inside: avoid;
     margin-bottom: 15px;
   }
-  .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    border-top: 1px solid #e5e7eb;
-    page-break-inside: avoid; /* Prevents the footer from being split */
-    -webkit-print-color-adjust: exact; /* Ensures background colors print in Chrome */
-    print-color-adjust: exact; /* Standard version of the above */
-  }
+  
  }
 
 
