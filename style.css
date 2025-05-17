@@ -847,7 +847,9 @@ video {
       font-size: 14px;
     }    
     .logo-img {
-      height: 24px;
+      /*height: 24px;*/
+      height: 100%;
+      object-fit: contain;
     }
  body {
       font-family: Arial, sans-serif;
