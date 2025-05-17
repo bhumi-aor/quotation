@@ -782,14 +782,13 @@ video {
   /* These prevent page breaks inside each content block */
   break-inside: avoid;
   page-break-inside: avoid; /* For older browsers */
-  margin-bottom: 20px;
 }
 
 .heading {
   text-decoration: underline;
   font-weight: bold;
- /* margin-bottom: 5px;*/
-   margin-bottom: 15px;
+ margin-bottom: 5px;
+
 }
 
 .detail-line {
@@ -797,7 +796,7 @@ video {
 }
 
 /*-------------------*/
-/* Modify the footer positioning to ensure it stays at bottom */
+/* Modify the footer positioning to ensure it stays at bottom 
     .footer {
       position: fixed;
       bottom: 0;
@@ -809,30 +808,29 @@ video {
       border-top: 1px solid #434190;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: center;*/
     }
 /* Footer styling for repeating on each page */
-  /*  .footer {
+   .footer {
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 50px; */
+      height: 50px; 
      /* background-color: white;*/
      /* border-top: 1px solid #e5e7eb;*/
-     /* z-index: 100;
-    /*  display: flex;
-      justify-content: space-between; */
-    /*  align-items: center;*/
-    /*  padding: 10px 56px;*/
-    }*/
+      z-index: 100;
+       display: flex;
+      justify-content: space-between; 
+      align-items: center;
+     padding: 10px 20px;/*56px;*/
+    }
 /* Totals section */
     .totals-wrapper {
       width: 100%;
       display: flex;
       justify-content: flex-end;
       margin-top: 16px;
-      page-break-inside: avoid; /* เพิ่มเติม */
     }
     
     .totals-table {
@@ -857,16 +855,10 @@ video {
       margin-bottom: 60px; /* Add space before footer */
     }
 
-/* Add padding to main content to prevent overlap with footer */
-.main-content {
-      padding-bottom: 80px; /* Adjust this value based on your footer height */
-    } 
-
 /* Payment and notes sections positioned relatively */
     .payment-notes-container {
       position: relative;
       z-index: 1;
-      page-break-inside: avoid; /* เพิ่มเติม */
     }
  /* Ensure proper padding between sections */
     .payment-details {
@@ -877,24 +869,16 @@ video {
   table {
       table-layout: fixed;
     }  
-/* Better table row spacing */
-    tbody tr td {
-      padding: 8px 4px;
-    }
+
 /* Footer */
     .footer-content {
-      font-size: 12px;
-      color: #434190;
-     /* color: #64748b;
-      font-size: 14px;*/
+      color: #64748b;
+      font-size: 14px;
     }    
     .logo-img {
       /*height: 24px;*/
-      /*
       height: 100%;
-      object-fit: contain;*/
-      height: 40px;
-      width: auto;
+      object-fit: contain;
     }
  body {
       font-family: Arial, sans-serif;
