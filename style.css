@@ -873,11 +873,6 @@ video {
       color: #333;
     }
 /*-----------------------------------*/
-/* And these styles */
-.print-footer {
-  display: none; /* Hide in normal view */
-}
-/*-----------------------------------*/
 @media print {
   /* Basic page setup */
   @page {
@@ -946,31 +941,6 @@ video {
     page-break-inside: avoid;
     margin-bottom: 15px;
   }
-/*------------------------*/
-  .print-footer {
-    display: block;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding-right: 15mm;
-    text-align: right;
-    hight: 50px;/*---เพิ่มเติม*/
-   /* border-top: 1px solid #434190;*/
-  }
-  
-  .print-footer-line1 {
-    font-family: Impact, sans-serif;
-    font-size: 18pt;
-    line-height: 1.2;
-  }
-  
-  .print-footer-line2 {
-    font-family: Impact, sans-serif;
-    font-size: 8pt;
-    line-height: 1.2;
-  }
-   /*---------------------*/
  }
 
 
