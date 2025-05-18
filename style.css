@@ -913,6 +913,7 @@ video {
   /* Main content no longer needs margin-top as the table structure handles spacing */
   .main-content {
     page-break-inside: auto;
+     margin-bottom: 80px; /* ต้องเว้นให้พอสำหรับ footer */
   }  
 
  /* Table styles */
