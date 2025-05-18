@@ -885,7 +885,8 @@ video {
   }  
   body {
     margin: 0;
-    padding: 0;
+    padding-bottom: 100px;
+    /* padding:0;*/
     width: 100%;
   }
   /* This is the key technique: use table-header-group */
