@@ -877,7 +877,7 @@ video {
 .print-footer {
   display: none; /* Hide in normal view */
 }
-
+/*-----------------------------------*/
 @media print {
   /* Basic page setup */
   @page {
@@ -955,7 +955,7 @@ video {
     left: 0;
     padding-right: 15mm;
     text-align: right;
-    border-top: 1px solid #434190;
+   /* border-top: 1px solid #434190;*/
   }
   
   .print-footer-line1 {
@@ -965,8 +965,8 @@ video {
   }
   
   .print-footer-line2 {
-    font-family: Arial, sans-serif;
-    font-size: 10pt;
+    font-family: Impact, sans-serif;
+    font-size: 8pt;
     line-height: 1.2;
   }
    /*---------------------*/
