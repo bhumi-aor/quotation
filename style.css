@@ -752,6 +752,7 @@ video {
    display: flex;
    justify-content: space-between;
 }
+
 /*  ------- original --------
 @page {
   margin: 0;
@@ -880,7 +881,7 @@ video {
   }  
   body {
     margin: 0px 10px 0px 20px;
-    padding:0;
+    padding:0px 10px 0px 20px;
     width: 100%;
   }
   /* This is the key technique: use table-header-group */
