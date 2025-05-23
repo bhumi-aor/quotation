@@ -873,6 +873,13 @@ video {
       padding: 0;
       color: #333;
     }
+.detail-line:empty,
+.detail-line:has([data-empty="true"]) {
+    display: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
 /*-----------------------------------*/
 @media print {
   /* Basic page setup */
