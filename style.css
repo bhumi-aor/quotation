@@ -875,9 +875,8 @@ video {
     }
 .field-value {
       color: #333;
-      display: inline;
     }
-        
+       
 .field-value:not(:empty)::before {
       content: ": ";
         }
