@@ -873,6 +873,14 @@ video {
       padding: 0;
       color: #333;
     }
+.field-value {
+      color: #333;
+      display: inline;
+    }
+        
+.field-value:not(:empty)::before {
+      content: ": ";
+        }
 /*-----------------------------------*/
 @media print {
   /* Basic page setup */
