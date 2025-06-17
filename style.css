@@ -884,6 +884,15 @@ video {
 .field-value[data-value="0"] {
   color: transparent;
       }
+
+td[data-value="0"] {
+  color: transparent;
+}
+
+td[data-value="0"]::before {
+  content: "\00A0";
+  color: initial;
+}
 /*-----------------------------------*/
 @media print {
   /* Basic page setup */
