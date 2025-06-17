@@ -885,10 +885,6 @@ video {
   color: transparent;
       }
 
-.field {
-  padding: 10px 5px; /* Creates space even when empty */
-  min-width: 50px; /* Minimum width */
-}
 /*-----------------------------------*/
 @media print {
   /* Basic page setup */
