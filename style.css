@@ -873,6 +873,7 @@ video {
       padding: 0;
       color: #333;
     }
+/*------ใส่ colonเงื่อนไขการชำระเงิืน-------*/
 .field-value {
       color: #333;
     }
@@ -884,7 +885,23 @@ video {
 .field-value[data-value="0"] {
   color: transparent;
       }
+/*------ Total = 0-----------*/
+.hide-zero {
+  position: relative;
+}
 
+.hide-zero:before {
+  content: attr(data-value);
+  visibility: visible;
+}
+
+.hide-zero[data-value="0"]:before {
+  content: "\00a0"; /* Non-breaking space */
+}
+
+.hide-zero[data-value="0"] {
+  color: transparent;
+}
 /*-----------------------------------*/
 @media print {
   /* Basic page setup */
