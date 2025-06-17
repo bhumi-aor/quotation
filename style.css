@@ -885,13 +885,9 @@ video {
   color: transparent;
       }
 
-td[data-value="0"] {
-  color: transparent;
-}
-
-td[data-value="0"]::before {
-  content: "\00A0";
-  color: initial;
+.field {
+  padding: 10px 5px; /* Creates space even when empty */
+  min-width: 50px; /* Minimum width */
 }
 /*-----------------------------------*/
 @media print {
